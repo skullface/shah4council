@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <title>My First Parcel App</title>
+    <title>Tanmay Shah for Cleveland City Council Ward 12</title>
     <meta name="description" content="Tanmay Shah is running for Cleveland City Council in Ward 12 to fight for the working class." />
 
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
@@ -14,15 +14,17 @@
   </head>
   <body class="">
     <header class="bg-white/50 backdrop-blur">
-      <nav class="px-4 py-3 max-w-[1200px] mx-auto flex gap-6 items-center justify-between font-semibold">
-        <img src="./assets/elect-tamay-shah-logo.svg" alt="Elect Tanmay Shah Logo" class="h-8 lg:h-12" />
+      <nav class="px-4 py-3 max-w-[1000px] mx-auto flex gap-6 items-center justify-between font-semibold">
+        <a href="/">
+          <img src="./assets/elect-tamay-shah-logo.svg" alt="Elect Tanmay Shah for Cleveland City Council" class="h-8 lg:h-12" />
+        </a>
         <div class="flex items-center flex-wrap gap-6">
-          <a href="#about">About <span class="hidden lg:inline">Tanmay</span></a>
-          <a href="#ward-12">Ward 12</a>
-          <a href="#volunteer">Get involved</a>
+          <a href="#about" class="hover:text-[#d71920] transition">About <span class="hidden lg:inline">Tanmay</span></a>
+          <a href="#ward-12" class="hover:text-[#d71920] transition">Ward 12</a>
+          <a href="#volunteer" class="hover:text-[#d71920] transition">Get involved</a>
           <a
             href="#donate"
-            class="px-3 lg:mr-2 py-2 rounded-md bg-black text-white hidden lg:inline-block"
+            class="px-3 lg:mr-2 py-2 rounded-md bg-black text-white hidden lg:inline-block hover:bg-[#d71920] transition"
           >
             Donate
           </a>
@@ -31,7 +33,7 @@
     </header>
     <main>
       <section class="bg-[#1f201f] bg-[url('./assets/banner.jpg')] bg-[-700px_-250px] lg:bg-[center_right] bg-[auto_150%] bg-no-repeat">
-        <div class="px-4 max-w-[1200px] px-3 mx-auto flex flex-col items-start justify-end pb-6 lg:pb-0 lg:justify-center gap-5 min-h-[500px]">
+        <div class="px-4 max-w-[1000px] px-3 mx-auto flex flex-col items-start justify-end pb-6 lg:pb-0 lg:justify-center gap-5 min-h-[500px]">
           <h1 class="font-serif leading-none text-4xl lg:text-6xl font-bold text-white [text-shadow:_0_2px_2px_rgb(0,0,0,0.3)]">
             <span>Tanmay Shah</span>
             <span class="block text-2xl lg:text-4xl font-sans font-bold">Cleveland City Council</span>
@@ -41,66 +43,94 @@
           </p>
           <div class="flex gap-4 font-semibold">
             <a href="#donate" class="px-5 py-3 rounded-md bg-white border border-white hover:border-[#d71920] hover:bg-[#d71920] hover:text-white transition text-black">Donate</a>
-            <a href="#volunteer" class="px-5 py-3 rounded-md border border-white/50 hover:border-white transition text-white">Volunteer</a>
+            <a href="#volunteer" class="px-5 py-3 rounded-md border border-white/50 hover:border-white hover:bg-black/20 transition text-white">Volunteer</a>
           </div>
         </div>
       </section>
-      <section class="text-center mx-auto max-w-[1200px] px-4 max-w-prose flex flex-col gap-6 py-16">
-        <h2 class="sr-only">About Tanmay</h2>
-        <p class="text-xl leading-relaxed">
-          Tanmay Shah is a <b class="font-sans font-semibold">union organizer</b>, <b class="font-sans font-semibold">lawyer</b>, and <b class="font-sans font-semibold">truck driver</b> who wants every single Clevelander to have <b class="font-sans font-semibold">affordable housing</b>, <b class="font-sans font-semibold">affordable groceries</b>, and <b class="font-sans font-semibold">reliable city services</b>.
-        </p>
-        
-        <div class="text-sm flex gap-2 items-center justify-center">
-          <span>
-            How to pronounce my name:
-          </span>
-            <button 
-              type="button" 
-              class="flex items-center gap-1 border rounded-sm px-2 py-1 border-gray-300 items-center justify-center cursor-pointer rounded-md border-[none] font-medium hover:text-[#d71920] hover:border-[#d71920] transition" 
-              aria-label="Play name pronunciation"
-              onclick="playPronunciation()"
-            >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                stroke-width="2" 
-                stroke-linecap="round" 
-                stroke-linejoin="round" 
-                class="w-4 h-4 text-[#d71920]"
+
+      <section class="mx-auto max-w-[1000px] px-4 flex flex-col md:flex-row gap-8 md:gap-16 py-8 lg:py-16">
+        <div class="md:w-1/2 flex flex-col gap-4 justify-center">
+          <h2 class="sr-only">About Tanmay</h2>
+          <p class="text-xl leading-relaxed">
+            Tanmay Shah is a <b class="font-sans font-semibold">union organizer</b>, <b class="font-sans font-semibold">lawyer</b>, and <b class="font-sans font-semibold">truck driver</b> who wants every single Clevelander to have <b class="font-sans font-semibold">affordable housing</b>, <b class="font-sans font-semibold">affordable groceries</b>, and <b class="font-sans font-semibold">reliable city services</b>.
+          </p>
+          <div class="text-sm w-fit z-10 flex flex-wrap gap-2 items-center">
+            <span>
+              How to pronounce my name:
+            </span>
+              <button 
+                type="button" 
+                class="flex items-center gap-1 border rounded-sm px-2 py-1 bg-white border-gray-300 items-center justify-center cursor-pointer rounded-md border-[none] font-medium hover:text-[#d71920] hover:border-[#d71920] transition" 
+                aria-label="Play name pronunciation"
+                onclick="playPronunciation()"
               >
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
-              Tuhn-mai Shaa
-            </button>
-            <audio id="name-pronunciation" class="">
-              <source src="./assets/name-pronunciation.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-width="2" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  class="w-4 h-4 text-[#d71920]"
+                >
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                Tuhn-mai Shaa
+              </button>
+              <audio id="name-pronunciation" class="hidden">
+                <source src="./assets/name-pronunciation.mp3" type="audio/mpeg">
+              </audio>
+          </div>
+        </div>
+          
+        <div class="md:w-1/2 max-md:mx-auto">
+          <img src="./assets/truck.jpg" alt="" class="rounded-lg border border-gray-300" />
         </div>
       </section>
       <section>
         <h2 class="sr-only">Tanmay biography</h2>
-        <div class="bg-[#d71920] text-white py-16">
-          <div class="max-w-4xl px-4 mx-auto flex items-center gap-16">
-            <div class="m-8 md:w-1/2">
+        <div class="bg-[#d71920] text-white py-8 lg:py-16">
+          <div class="max-w-[1000px] px-4 mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16">
+            <div class="order-last md:order-first md:w-1/2">
               <img src="./assets/house-cat.jpg" class="rounded-lg border border-[#AE0C12]" alt="Tanmay Shah" class="rounded-lg w-full h-auto">
             </div>
-            <p class="md:w-1/2 leading-relaxed">
+            <p class="w-full md:w-1/2 leading-relaxed">
               Tanmay Shah is a Jefferson neighborhood homeowner and democratic socialist running for <b class="font-semibold font-sans">Cleveland City Council in Ward 12</b>. He is a proud immigrant from India who has called Northeast Ohio home for almost 15 years. Tanmay is committed to fighting for the working class in Cleveland — from defending tenants against unethical landlords in housing court to organizing a union at the fifth oldest legal aid organization in the United&nbsp;States.
             </p>
           </div>
         </div>
-        <div class="bg-[#000] text-white py-16">
-          <div class="max-w-4xl px-4 mx-auto flex items-center gap-16">
+        <div class="bg-[#000] text-white py-8 lg:py-16">
+          <div class="max-w-[1000px] px-4 mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <p class="md:w-1/2 leading-relaxed">
               The problems facing Cleveland are no secret: people and jobs have been leaving for decades. Instead of investing in housing, food access, and city services (such as composting or public transit) for working class families, City Hall has prioritized stadiums, tax breaks, and luxury development for the wealthy. Tanmay believes <b class="font-semibold font-sans">our city government can improve our lives and help our neighborhoods prosper</b>. He will fight to make sure the people of Ward 12 have safe and affordable housing, groceries, and reliable city&nbsp;services.
             </p>
-            <div class="m-8 md:w-1/2">
-              <img src="./assets/bus-stop.jpg" class="rounded-lg border border-[#AE0C12]" alt="Tanmay Shah" class="rounded-lg w-full h-auto">
+            <div class="md:w-1/2">
+              <img src="./assets/bus-stop.jpg" class="rounded-lg border border-[#333333]" alt="Tanmay Shah" class="rounded-lg w-full h-auto">
             </div>
+          </div>
+        </div>
+      </section>
+      <section class=" py-8 lg:py-16 bg-gray-100">
+        <div class="max-w-[1000px] px-4 mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16"> 
+          <div class="md:w-1/2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-81.6943605!3d41.49932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fc7dc53e7d85%3A0x8309d8edb9a97b11!2sCleveland%2C%20OH!5e0!3m2!1sen!2sus!4v1615308482252!5m2!1sen!2sus" 
+              width="100%" 
+              height="400"
+              allowfullscreen="" 
+              loading="lazy"
+              class="rounded-lg border border-gray-300"
+            />
+          </div>
+          <div class="md:w-1/2 flex flex-col gap-4">
+            <h2 class="text-3xl font-bold">About Ward 12</h2>
+            <p>
+              The new Ward 12 on the West side of Cleveland starts at the Linndale border and includes Edgewater, Cudell, and West Boulevard into Jefferson.
+            </p>
+            <p>
+              <a href="https://www.clevelandcitycouncil.org/cleveland-city-council-redistricting" class="font-bold mb-2">2025 redistricting information &rsaquo;</a>
+            </p>
           </div>
         </div>
       </section>
