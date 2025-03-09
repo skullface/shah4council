@@ -29,7 +29,7 @@
       </nav>
     </header>
     <main>
-      <section class="bg-[#1f201f] bg-[url('./assets/banner.jpg')] bg-[-700px_-250px] lg:bg-[center_right] bg-[auto_150%] bg-no-repeat">
+      <section class="bg-[#1f201f] bg-[url('./assets/banner.jpg')] bg-[-700px_-250px] md:bg-[-300px_-250px] xl:bg-[center_right] bg-[auto_150%] bg-no-repeat">
         <div class="px-4 max-w-[1000px] px-3 mx-auto flex flex-col items-start justify-end pb-6 lg:pb-0 lg:justify-center gap-5 min-h-[500px]">
           <h1 class="font-serif leading-none text-4xl lg:text-6xl font-bold text-white [text-shadow:_0_2px_2px_rgb(0,0,0,0.3)]">
             <span>Tanmay Shah</span>
@@ -94,7 +94,7 @@
           </div>
         </div>
       </section>
-      <section class=" py-8 lg:py-16 bg-gray-100">
+      <section class="py-8 lg:py-16 bg-gray-100">
         <div class="max-w-[1000px] px-4 mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16"> 
           <div class="md:w-1/2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-81.6943605!3d41.49932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fc7dc53e7d85%3A0x8309d8edb9a97b11!2sCleveland%2C%20OH!5e0!3m2!1sen!2sus!4v1615308482252!5m2!1sen!2sus" width="100%" height="400" allowfullscreen="" loading="lazy" class="rounded-lg border border-gray-300">
@@ -105,15 +105,103 @@
               The new Ward 12 on the West side of Cleveland starts at the Linndale border and includes Edgewater, Cudell, and West Boulevard into Jefferson.
             </p>
             <p>
-              <a href="https://www.clevelandcitycouncil.org/cleveland-city-council-redistricting" class="font-bold mb-2">2025 redistricting information &rsaquo;</a>
+              <a href="https://www.clevelandcitycouncil.org/cleveland-city-council-redistricting" class="font-bold mb-2 hover:text-[#d71920]">2025 redistricting information &rsaquo;</a>
             </p>
           </div>
         </div>
       </section>
+      
+      <section id="donate" class="py-8 lg:py-16 bg-white">
+        <div class="container md:mx-auto px-4 flex flex-col md:flex-row max-w-[600px] md:items-center gap-8 md:gap-16">
+          <div class="flex flex-col gap-4">
+            <h2 class="text-3xl font-bold">Donate</h2>
+            <p class="max-w-2xl">
+              <i class="block">For the working class by the working class.</i>
+              Help us buy mailers, yard signs, host events and more by contributing&nbsp;today.
+            </p>
+          </div>
+          <div class="flex md:flex-col font-bold md:items-center gap-4 md:w-[130px] md:mx-auto">
+            <a href="#" class="bg-[#d71920] border border-[#AE0C12] hover:bg-black hover:border-black text-white w-full py-2 px-4 rounded text-center">$25</a>
+            <a href="#" class="bg-[#d71920] border border-[#AE0C12] hover:bg-black hover:border-black text-white w-full py-2 px-4 rounded text-center">$50</a>
+            <a href="#" class="bg-[#d71920] border border-[#AE0C12] hover:bg-black hover:border-black text-white w-full py-2 px-4 rounded text-center">$100</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="get-involved" class="py-8 lg:py-16 bg-[#d71920]">
+        <div class="container mx-auto px-4 grid gap-4">
+          <h2 class="text-3xl font-bold text-center text-white">Get involved</h2>
+          <div class="max-w-md mx-auto bg-white p-6 rounded-lg">
+            <form class="space-y-4">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <input type="text" placeholder="First name" class="w-full px-3 py-2 border border-gray-300 rounded">
+                </div>
+                <div>
+                  <input type="text" placeholder="Last name" class="w-full px-3 py-2 border border-gray-300 rounded">
+                </div>
+              </div>
+              <div>
+                <input type="email" placeholder="Email" class="w-full px-3 py-2 border border-gray-300 rounded">
+              </div>
+              <div>
+                <input type="tel" placeholder="Phone number" class="w-full px-3 py-2 border border-gray-300 rounded">
+              </div>
+              
+              <div>
+                <p class="mb-2 font-medium">How would you like to get involved?</p>
+                <div class="space-y-2">
+                  <label class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    Volunteer
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    Yard Sign
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    Send Text Messages
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    Make Phone Calls
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    Knock Doors
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="mr-2">
+                    Community Service Support
+                  </label>
+                </div>
+              </div>
+              
+              <button type="submit" class="w-full bg-black text-white py-2 px-4 rounded flex items-center justify-center gap-1 cursor-pointer hover:bg-[#d71920] transition border-black hover:border-[#d71920]">
+                <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.8333 3.1665H3.16668C2.4303 3.1665 1.83334 3.76346 1.83334 4.49984V12.4998C1.83334 13.2362 2.4303 13.8332 3.16668 13.8332H13.8333C14.5697 13.8332 15.1667 13.2362 15.1667 12.4998V4.49984C15.1667 3.76346 14.5697 3.1665 13.8333 3.1665Z"></path>
+                    <path d="M15.1667 5.1665L9.18668 8.9665C8.98086 9.09545 8.74289 9.16384 8.50001 9.16384C8.25713 9.16384 8.01916 9.09545 7.81334 8.9665L1.83334 5.1665"></path>
+                  </g>
+                </svg>  
+                Subscribe
+              </button>
+              
+              <p class="text-xs text-gray-500 mt-4">
+                By submitting your information, you are agreeing to receive email communications from Neighbors for Tanmay Shah. You can unsubscribe any time. See Privacy Policy for details. Message frequency varies. Message & data rates may apply.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-  </body>
   
-  <script>function playPronunciation() {
+    <footer class="py-4 container mx-auto px-4 text-center">
+        <p class="font-sans border px-2 py-1 w-fit mx-auto text-sm uppercase">Paid for by Neighbors for Tanmay Shah</p>
+    </footer>
+
+    <script>function playPronunciation() {
     const audio = document.getElementById('name-pronunciation');
     if (audio.paused) audio.play();
     else {
@@ -123,4 +211,5 @@
 }
 
 </script>
+  </body>
 </html>
