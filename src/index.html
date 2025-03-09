@@ -10,7 +10,6 @@
 
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="app.js"></script>
   </head>
   <body class="font-serif">
     <header class="bg-white/50 backdrop-blur">
@@ -225,15 +224,18 @@
     </footer>
 
     <script>
-      function playPronunciation() {
-        const audio = document.getElementById('name-pronunciation');
-        if (audio.paused) {
-          audio.play();
-        } else {
-          audio.pause();
-          audio.currentTime = 0;
-        }
-      }
+      document.addEventListener('DOMContentLoaded', function() {
+        const button = document.getElementById('pronunciation-button');
+        button.addEventListener('click', function() {
+          const audio = document.getElementById('name-pronunciation');
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+            audio.currentTime = 0;
+          }
+        });
+      });
     </script>
   </body>
 </html>

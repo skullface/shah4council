@@ -596,14 +596,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"bNKaB":[function(require,module,exports,__globalThis) {
-function playPronunciation() {
-    const audio = document.getElementById('name-pronunciation');
-    if (audio.paused) audio.play();
-    else {
-        audio.pause();
-        audio.currentTime = 0;
-    }
-}
 
 },{}]},["9w8YQ","bNKaB"], "bNKaB", "parcelRequire94c2")
 

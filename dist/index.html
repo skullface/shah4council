@@ -10,7 +10,6 @@
 
     <link rel="shortcut icon" href="/favicon.0f1069a7.png" type="image/x-icon">
     <link rel="stylesheet" href="/index.2cdaf7bc.css">
-    <script src="/index.0641b553.js" defer=""></script>
   </head>
   <body class="font-serif">
     <header class="bg-white/50 backdrop-blur">
@@ -200,15 +199,18 @@
         <p class="font-sans border px-2 py-1 w-fit mx-auto text-sm uppercase">Paid for by Neighbors for Tanmay Shah</p>
     </footer>
 
-    <script>function playPronunciation() {
-    const audio = document.getElementById('name-pronunciation');
-    if (audio.paused) audio.play();
-    else {
-        audio.pause();
-        audio.currentTime = 0;
-    }
-}
+    <script>document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('pronunciation-button');
+    button.addEventListener('click', function() {
+        const audio = document.getElementById('name-pronunciation');
+        if (audio.paused) audio.play();
+        else {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    });
+});
 
 </script>
-  </body>
+  <script src="/tanmay.59712999.js"></script></body>
 </html>
